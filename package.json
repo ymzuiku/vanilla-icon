@@ -1,6 +1,6 @@
 {
-  "name": "vanilla-icon",
-  "version": "0.1.0",
+  "name": "promise-for",
+  "version": "0.1.3",
   "main": "umd/index.js",
   "types": "umd/index.d.ts",
   "private": false,
@@ -15,10 +15,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ymzuiku/vanilla-icon.git"
+    "url": "git+https://github.com/ymzuiku/promise-for.git"
   },
   "bugs": {
-    "url": "git+https://github.com/ymzuiku/vanilla-icon.git"
+    "url": "git+https://github.com/ymzuiku/promise-for.git"
   },
-  "homepage": "git+https://github.com/ymzuiku/vanilla-icon.git"
+  "homepage": "git+https://github.com/ymzuiku/promise-for.git"
 }

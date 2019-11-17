@@ -1,9 +1,5 @@
-import { IStyle } from './IStyle';
-export interface IOptions {
-    size?: string;
-    type?: 'font' | 'svg';
-    style?: IStyle;
-    iconfontClass?: string;
+declare function promiseFor(list: any[], task: (value: any, index: number) => Promise<any>, sleep?: number): Promise<unknown>;
+declare namespace promiseFor {
+    var sleep: (ms: number) => Promise<unknown>;
 }
-declare const vanillaIcon: (icon: string, options?: IOptions | undefined) => HTMLSpanElement;
-export default vanillaIcon;
+export default promiseFor;

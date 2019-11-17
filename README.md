@@ -1,20 +1,33 @@
-# vanilla-icon
+# promise-for
 
 > Size < 1kb
 
 ## Install
 
 ```sh
-$ npm install --save vanilla-message
+$ npm install --save promise-for
 ```
 
 ## Use
 
 ```js
-import List from 'vanilla-icon';
+import promiseFor from "promise-for";
+// In node-js
+// const promiseFor = require("promise-for/node");
 
-// add https://www.iconfont.cn/ css-iconfont
-const icon = Icon('close', { type: 'font' });
+promiseFor(["10", "20", "30"], async (v, i) => {
+  await doSometing(v, i);
+});
+```
 
-document.body.append(iconi);
+每个 Promise 中间再间隔 300ms：
+
+```js
+import promiseFor from "promise-for";
+// In node-js
+// const promiseFor = require("promise-for/node");
+
+promiseFor(["10", "20", "30"], async (v, i) => {
+  await doSometing(v, i);
+}， 300);
 ```

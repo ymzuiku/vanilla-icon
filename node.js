@@ -1,8 +1,4 @@
-function promiseFor(
-  list: any[],
-  task: (value: any, index: number) => Promise<any>,
-  sleep?: number
-) {
+function promiseFor(list, task, sleep) {
   let i = -1;
   return new Promise(res => {
     function recursion() {
@@ -23,10 +19,10 @@ function promiseFor(
   });
 }
 
-promiseFor.sleep = function(ms: number) {
+promiseFor.sleep = function(ms) {
   return new Promise(res => {
     setTimeout(res, ms);
   });
 };
 
-export default promiseFor;
+module.exports = promiseFor;
